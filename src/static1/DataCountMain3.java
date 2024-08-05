@@ -16,6 +16,13 @@ public class DataCountMain3 {
         Data3 data3 = new Data3("C");
         System.out.println("C count=" + Data3.count); // 3
 
+        // 인스턴스를 통한 접근 -> 추천X (인스턴스 변수에 접근하는 것 처럼 오해할 수 있다.)
+        Data3 data4 = new Data3("D");
+        System.out.println(data4.count);
+
+        // 클래스를 통한 접근 -> 추천O (클래스를 통해서 접근하는 것이 더 명확하다.)
+        System.out.println(Data3.count);
+
     }
 
 }
