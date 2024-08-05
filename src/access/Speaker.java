@@ -6,7 +6,7 @@ public class Speaker {
     // - 음량을 높이고, 내리고, 현재 음량을 확인할 수 있는 단순한 기능을 제공
     // - 스피커의 음량은 절대로 100을 넘으면 안된다. (100을 넘어가면 스피커의 부품들이 고장난다.)
 
-    int volume;
+    private int volume; // private 사용
 
     Speaker(int volume) { // 생성자를 통해 초기 음량 값을 지정
         this.volume = volume;
